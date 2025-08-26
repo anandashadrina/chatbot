@@ -1,0 +1,8 @@
+# Keep the image small and clean
+__pycache__/
+*.pyc
+.git/
+node_modules/
+
+# TTS output should be generated at runtime, not baked into the image
+static/audio/*

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Conversational Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Chatbot</h1>
+      <div class="controls">
+        <button id="resetBtn" title="Reset conversation">↺ Reset</button>
+      </div>
+    </header>
+
+    <!-- Chat window -->
+    <div id="chat-box" class="chat-box"></div>
+    <div id="typing" class="typing" style="display:none;">Bot is typing…</div>
+
+    <!-- Input row -->
+    <form id="chat-form" class="input-row">
+      <input id="msg" type="text" placeholder="Type your message…" />
+      <button id="sendBtn" type="submit">Send</button>
+      <button id="recBtn" type="button" title="Hold to record or click to toggle">🎤</button>
+    </form>
+
+    <!-- Recording status -->
+    <div id="recStatus" class="rec-status" style="display:none;">
+      Recording… click 🎤 again to stop
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

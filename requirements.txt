@@ -1,0 +1,9 @@
+flask
+python-dotenv
+google-generativeai
+grpcio
+edge-tts
+aiohttp
+speechrecognition
+pydub
+gunicorn

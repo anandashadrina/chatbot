@@ -55,7 +55,6 @@ Create a `.env` file in the project root:
 
 ```ini
 GEMINI_API_KEY=your_api_key_here
-GEMINI_MODEL=gemini-2.5-flash
 ```
 
 ### 4. Run the app
